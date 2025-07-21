@@ -1,0 +1,21 @@
+.banners {
+  width: 100%;
+  height: 500px;
+}
+
+.banners img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .banners {
+    height: 250px; /* ou até menos, tipo 200px, dependendo da imagem */
+  }
+
+  .banners img {
+    object-fit: cover; /* mantém preenchido */
+  }
+}

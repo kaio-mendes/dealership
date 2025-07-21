@@ -1,0 +1,31 @@
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mySwiper {
+  width: 50%;
+}
+
+.swiperSlide img {
+  height: 5rem;
+  cursor: pointer;
+}
+
+.swiperSlide img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    width: 100%;
+  }
+  .swiperSlide img {
+    height: 4rem;
+    cursor: pointer;
+  }
+}

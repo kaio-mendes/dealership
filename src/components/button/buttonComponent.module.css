@@ -1,0 +1,29 @@
+.button {
+  border: none;
+  text-transform: capitalize;
+  outline: none;
+  width: auto;
+  background-color: #f9523e;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  min-width: 150px;
+  min-height: 50px;
+}
+
+.button:hover {
+  background-color: #f9513ed3;
+  transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 100px;
+    height: 40px;
+
+    min-width: unset;
+    min-height: unset;
+  }
+}

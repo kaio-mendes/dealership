@@ -9,8 +9,8 @@ export const HomePage = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      <main>
+    <main>
+      <div style={{ maxWidth: 1800, margin: "0 auto", padding: "0 1rem" }}>
         <Banner />
         <CategoryLogos />
         <NewCars />
@@ -29,7 +29,7 @@ export const HomePage = () => {
           />
         </div>
         <Highlights />
-      </main>
-    </>
+      </div>
+    </main>
   );
 };

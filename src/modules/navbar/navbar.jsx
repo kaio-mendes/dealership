@@ -4,10 +4,12 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
+
 export const Navbar = () => {
   const navigate = useNavigate();
   const [toogleMenu, setToogleMenu] = useState(false);
   const [showMobile, setShowMobile] = useState(false);
+
   useEffect(() => {
     if (window.innerWidth <= 768) {
       setShowMobile(true);
@@ -15,11 +17,11 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <div style={{ maxWidth: 1800, margin: "0 auto", padding: "0 1rem" }}>
+    <header className={styles.navContainer}>
       <nav className={styles.nav}>
-        <div className={styles.logo}>
-          <img src={Logo} alt="Logotipo" onClick={() => navigate("/")} />
-          <div className={styles.text} onClick={() => navigate("/")}>
+        <div className={styles.logo} onClick={() => navigate("/")}>
+          <img src={Logo} alt="Logotipo" />
+          <div className={styles.text}>
             <h1>ORIGINAL</h1>
             <p>multimarcas</p>
           </div>
@@ -52,6 +54,6 @@ export const Navbar = () => {
           <Link to="/contato">Contato</Link>
         </div>
       )}
-    </div>
+    </header>
   );
 };

@@ -1,5 +1,3 @@
-import { Footer } from "../../modules/footer/footer";
-import { Navbar } from "../../modules/navbar/navbar";
 import styles from "../404/404.module.css";
 import imageNotFound from "../../assets/images/404.png";
 export const PageNotFound = () => {

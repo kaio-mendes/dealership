@@ -3,7 +3,7 @@ import Logo from "../../assets/images/logo.png";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 export const Navbar = () => {
   const navigate = useNavigate();
 
@@ -27,11 +27,11 @@ export const Navbar = () => {
         </div>
 
         <div className={styles.links}>
-          <a href="/empresa">Empresa</a>
-          <a href="/estoque">Estoque</a>
-          <a href="/localizacao">Localização</a>
-          <a href="/financiamento">Financiamento</a>
-          <a href="/contato">Contato</a>
+          <Link to="/empresa">Empresa</Link>
+          <Link to="/estoque">Estoque</Link>
+          <Link to="/localizacao">Localização</Link>
+          <Link to="/financiamento">Financiamento</Link>
+          <Link to="/contato">Contato</Link>
         </div>
 
         <div className={styles.buttons}>
@@ -47,9 +47,9 @@ export const Navbar = () => {
 
       {showMobile && toogleMenu && (
         <div className={styles.mobileLinks}>
-          <a href="/empresa">Empresa</a>
-          <a href="/financiamento">Financiamento</a>
-          <a href="/contato">Contato</a>
+          <Link to="/empresa">Empresa</Link>
+          <Link to="/financiamento">Financiamento</Link>
+          <Link to="/contato">Contato</Link>
         </div>
       )}
     </>

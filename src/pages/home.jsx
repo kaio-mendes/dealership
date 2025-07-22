@@ -12,7 +12,6 @@ export const HomePage = () => {
   return (
     <>
       <main>
-        <Navbar />
         <Banner />
         <CategoryLogos />
         <NewCars />
@@ -31,7 +30,6 @@ export const HomePage = () => {
           />
         </div>
       </main>
-      <Footer />
     </>
   );
 };

@@ -5,7 +5,6 @@ import imageNotFound from "../../assets/images/404.png";
 export const PageNotFound = () => {
   return (
     <div className={styles.pageNotFound}>
-      <Navbar />
       <main className={styles.content}>
         <h1>Página não encontrada</h1>
         <img src={imageNotFound} />
@@ -16,7 +15,6 @@ export const PageNotFound = () => {
           Voltar para a Home
         </a>
       </main>
-      <Footer />
     </div>
   );
 };

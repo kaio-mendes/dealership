@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./highlights.module.css";
 import { Autoplay, Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 export const HighlightsSwiper = ({ highlightCars = [] }) => {
   return (
@@ -26,7 +27,7 @@ export const HighlightsSwiper = ({ highlightCars = [] }) => {
               <img src={item.img} alt={item.title} />
               <div className={styles.about}>
                 <p>{item.title}</p>
-                <a href={`/estoque/${item.id}`}>Sobre</a>
+                <Link to={`/estoque/${item.id}`}>Sobre</Link>
               </div>
             </SwiperSlide>
           ))}

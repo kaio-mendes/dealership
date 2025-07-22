@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
 export const Navbar = () => {
   const navigate = useNavigate();
-
+  const [openSearch, setOpenSearch] = useState(false);
   const [toogleMenu, setToogleMenu] = useState(false);
   const [showMobile, setShowMobile] = useState(false);
   useEffect(() => {
@@ -14,6 +14,10 @@ export const Navbar = () => {
       setShowMobile(true);
     }
   }, []);
+
+  function toogleSearch() {
+    setOpenSearch((prev) => !prev);
+  }
 
   return (
     <>
@@ -35,6 +39,7 @@ export const Navbar = () => {
         </div>
 
         <div className={styles.buttons}>
+          <input type="text" placeholder="Pesquisar..." />
           <FaMagnifyingGlass />
         </div>
 

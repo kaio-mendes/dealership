@@ -7,7 +7,7 @@ export const NewCars = () => {
   return (
     <div className={styles.container}>
       <div className={styles.section}>
-        <h1>Novos Carros:</h1>
+        <h1>Novos carros:</h1>
         <ButtonComponent
           text="Mais carros"
           onClick={() => navigate("/estoque")}

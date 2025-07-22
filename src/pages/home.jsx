@@ -1,10 +1,9 @@
 import { Banner } from "../modules/banners/banner";
-import { Navbar } from "../modules/navbar/navbar";
 import { CategoryLogos } from "../modules/category-logos/category-logos";
 import { NewCars } from "../modules/new-cars/new-cars";
-import { Footer } from "../modules/footer/footer";
 import { ButtonComponent } from "../components/button/buttonComponent";
 import { useNavigate } from "react-router-dom";
+import { Highlights } from "../modules/highlights/highlights";
 
 export const HomePage = () => {
   const navigate = useNavigate();
@@ -29,6 +28,7 @@ export const HomePage = () => {
             onClick={() => navigate("/estoque")}
           />
         </div>
+        <Highlights />
       </main>
     </>
   );

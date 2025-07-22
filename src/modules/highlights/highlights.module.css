@@ -1,0 +1,81 @@
+.content {
+  margin: 20px 0 20px 0;
+}
+
+.content h1 {
+  padding: 1rem;
+}
+
+.items {
+  width: 100%;
+}
+
+.swiperContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperContainer img {
+  height: 10rem;
+  object-fit: contain;
+}
+
+.swiper {
+  width: 80%;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.swiperItems {
+  cursor: pointer;
+  height: 20rem;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  color: #474747;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.swiperItems {
+  transition: transform 0.2s ease;
+}
+
+.swiperItems:hover {
+  transform: translateY(-4px);
+}
+
+.swiperItems p {
+  padding: 1rem;
+}
+
+.swiperItems a {
+  padding: 0.4rem;
+  border-radius: 10px;
+  background-color: #47474725;
+  font-size: 14px;
+  text-decoration: none;
+  font-style: none;
+  color: inherit;
+}
+
+.swiperItems a:hover {
+  background-color: #4747473a;
+  transition: background-color 0.3s ease-in-out;
+}

@@ -19,7 +19,7 @@
 }
 
 .carCard:hover {
-  transform: scale(1.03);
+  transform: scale(1.003);
   cursor: pointer;
 }
 

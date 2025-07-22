@@ -17,6 +17,7 @@ nav {
 .logo img {
   height: 4rem;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .logo h1 {
@@ -26,11 +27,12 @@ nav {
 .text {
   text-align: center;
   line-height: 15px;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .links {

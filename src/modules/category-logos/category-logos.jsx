@@ -2,10 +2,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import styles from "../categories-logos/categorie-logos.module.css";
+import styles from "./category-logos.module.css";
 import carBrands from "../../data/car-brands";
+import { useNavigate } from "react-router";
 
-export const CategorieLogos = () => {
+export const CategoryLogos = () => {
+  const navigate = useNavigate();
+  function routesBrands(alt) {
+    navigate(`/${alt}`);
+    console.log("indo para " + alt);
+  }
   return (
     <div className={styles.center}>
       <Swiper
@@ -32,7 +38,11 @@ export const CategorieLogos = () => {
       >
         {carBrands.map((item) => (
           <SwiperSlide key={item.id} className={styles.swiperSlide}>
-            <img src={item.img} alt={item.alt} />
+            <img
+              src={item.img}
+              alt={item.alt}
+              onClick={() => routesBrands(item.alt)}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

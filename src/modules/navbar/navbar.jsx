@@ -47,9 +47,9 @@ export const Navbar = () => {
 
       {showMobile && toogleMenu && (
         <div className={styles.mobileLinks}>
-          <a href="#">Empresa</a>
-          <a href="#">Financiamento</a>
-          <a href="#">Contato</a>
+          <a href="/empresa">Empresa</a>
+          <a href="/financiamento">Financiamento</a>
+          <a href="/contato">Contato</a>
         </div>
       )}
     </>

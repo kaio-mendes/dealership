@@ -9,6 +9,8 @@
   display: flex;
   gap: 2rem;
   padding: 1rem;
+  width: 100%;
+  justify-content: space-betweens;
 }
 
 .footer img {
@@ -22,6 +24,7 @@
 
 .adress {
   width: 50%;
+  padding: 1rem;
 }
 
 .about {
@@ -30,6 +33,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: end;
+  padding: 1rem;
 }
 
 .about p {

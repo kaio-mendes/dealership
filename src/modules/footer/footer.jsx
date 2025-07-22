@@ -14,6 +14,7 @@ export const Footer = () => {
           GRANDE/SP
         </p>
       </div>
+
       <div className={styles.about}>
         <h2>Seminovos revisados, garantia de satisfação!</h2>
         <p>Procedência e qualidade em cada quilômetro</p>

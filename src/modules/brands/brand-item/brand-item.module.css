@@ -1,0 +1,65 @@
+/*Edição brand cars*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.TittleBrand {
+  text-transform: capitalize;
+}
+
+.cars {
+  background-color: #ebebeb31;
+  margin: 0.5rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.cars h2 {
+  margin: 0.5rem;
+}
+
+.Brandimgs img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid rgba(0, 0, 0, 0.062);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.informations p {
+  margin: 0;
+}
+
+.more {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .cars {
+    width: 300px;
+  }
+  .Brandimgs img {
+    width: 250px;
+  }
+}

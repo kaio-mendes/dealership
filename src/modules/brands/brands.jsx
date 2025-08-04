@@ -2,15 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import styles from "./category-logos.module.css";
+import styles from "./brands.module.css";
 import carBrands from "../../data/car-brands";
 import { useNavigate } from "react-router";
 
-export const CategoryLogos = () => {
+export const Brands = () => {
   const navigate = useNavigate();
   function routesBrands(alt) {
-    navigate(`/${alt}`);
-    console.log("indo para " + alt);
+    navigate(`/marca/${alt}`);
   }
   return (
     <div className={styles.center}>

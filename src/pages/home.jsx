@@ -1,5 +1,5 @@
 import { Banner } from "../modules/banners/banner";
-import { CategoryLogos } from "../modules/category-logos/category-logos";
+import { Brands } from "../modules/brands/brands";
 import { NewCars } from "../modules/new-cars/new-cars";
 import { ButtonComponent } from "../components/button/buttonComponent";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ export const HomePage = () => {
     <main>
       <div style={{ maxWidth: 1800, margin: "0 auto", padding: "0 1rem" }}>
         <Banner />
-        <CategoryLogos />
+        <Brands />
         <NewCars />
         <div
           style={{

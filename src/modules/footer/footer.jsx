@@ -1,5 +1,6 @@
 import styles from "../footer/footer.module.css";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router";
 
 export const Footer = () => {
   return (
@@ -21,7 +22,16 @@ export const Footer = () => {
           <p>Procedência e qualidade em cada quilômetro</p>
           <h2>Telefones</h2>
           <p>(14)99281-9239</p>
+          <Link to="/admin" className={styles.admin}>
+            Administração
+          </Link>
         </div>
+      </div>
+      <div className={styles.development}>
+        <p>
+          Desenvolvido por
+          <a href="https://www.kaiomendes.com.br/"> Kaio Mendes</a>
+        </p>
       </div>
     </footer>
   );

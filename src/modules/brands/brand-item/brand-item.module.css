@@ -1,5 +1,31 @@
 /*Edição brand cars*/
 
+.message {
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: rgb(104, 104, 104);
+  flex-direction: column;
+}
+
+.message a {
+  text-decoration: none;
+  font-style: none;
+  font-weight: 600;
+  color: red;
+}
+
+.message a:hover {
+  color: #605a86;
+  transition: color 0.3s ease-in-out;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;

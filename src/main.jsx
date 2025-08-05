@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App.jsx";
 import { AppRoutes } from "./Routes.jsx";
 import { Footer } from "./modules/footer/footer.jsx";
+import { ShowFormProvider } from "./context/showForm.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <AppRoutes>
-      <App />
-    </AppRoutes>
+    <ShowFormProvider>
+      <AppRoutes>
+        <App />
+      </AppRoutes>
+    </ShowFormProvider>
   </StrictMode>
 );

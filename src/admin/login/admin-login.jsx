@@ -22,7 +22,7 @@ export const AdminLogin = () => {
             <input type="text" placeholder="nome" />
             <div className={styles.password}>
               <input
-                type={showPass ? "password" : "text"}
+                type={showPass ? "text" : "password"}
                 placeholder="senha"
               />
               {showPass ? (

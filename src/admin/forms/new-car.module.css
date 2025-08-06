@@ -49,6 +49,13 @@
   resize: vertical;
 }
 
+.form option {
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .submitBtn {
   background-color: #22c55e;
   color: white;
@@ -63,4 +70,41 @@
 
 .submitBtn:hover {
   background-color: #16a34a;
+}
+
+.options {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.options label {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+  align-items: center;
+  gap: 10px;
+}
+
+.options input[type="checkbox"] {
+  margin-top: 0.5rem;
+  width: 18px;
+  height: 18px;
+  accent-color: #1976d2;
+}
+
+.form select {
+  margin-top: 0.5rem;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  min-width: 120px;
+  outline-color: #1976d2;
 }

@@ -18,7 +18,7 @@ export const AppRoutes = () => {
           <Route path="*" element={<PageNotFound />} />
           <Route path="/empresa" element={<Company />} />
           <Route path="/estoque" element={<Stock />} />
-          <Route path="/marca/:brand" element={<BrandItem />} />
+          <Route path="/estoque/:brand" element={<BrandItem />} />
           <Route path="/estoque/:id" element={<CarInformation />} />
         </Route>
         <Route path="/admin" element={<AdminLogin />} />

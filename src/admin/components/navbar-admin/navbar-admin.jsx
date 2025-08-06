@@ -1,21 +1,28 @@
 import styles from "./navbar-admin.module.css";
 import { FaHome, FaChartBar, FaCog } from "react-icons/fa";
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
 
 export const NavbarAdmin = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.navbar}>
-      <div className={styles.navItem}>
+      <div
+        className={styles.navItem}
+        onClick={() => navigate("/admin/dashboard")}
+      >
         <FaHome />
-        <Link to="admin/dashboard">Dashboard</Link>
+        <a>Dashboard</a>
       </div>
-      <div className={styles.navItem}>
+      <div
+        className={styles.navItem}
+        onClick={() => navigate("/admin/reports")}
+      >
         <FaChartBar />
-        <Link to="/admin/reports">Relatórios</Link>
+        <a>Relatórios</a>
       </div>
       <div className={styles.navItem}>
         <FaCog />
-        <Link>Config</Link>
+        <a>Config</a>
       </div>
     </div>
   );

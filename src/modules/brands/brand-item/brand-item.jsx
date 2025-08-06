@@ -10,6 +10,8 @@ export const BrandItem = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
+    console.log(brand);
+
     let url = "http://localhost:3000/cars";
     if (brand) {
       url += `?brand=${brand}`;
@@ -41,7 +43,7 @@ export const BrandItem = () => {
         <LoadingPage />
       ) : (
         <>
-          <h1 className={styles.TittleBrand}>{brand ? brand : "Estoque"}</h1>
+          {brand ? null : <h1 className={styles.TittleBrand}>Estoque</h1>}
           {car.length <= 0 ? (
             <div className={styles.message}>
               <h2>Estoque vazio</h2>
@@ -52,7 +54,14 @@ export const BrandItem = () => {
               {car.map((cars) => (
                 <div className={styles.cars} key={cars.id}>
                   <div className={styles.Brandimgs}>
-                    <img src={cars.img} alt={cars.name} />
+                    <img
+                      src={
+                        !cars.img
+                          ? "https://t3.ftcdn.net/jpg/02/50/16/42/360_F_250164295_HKK2v7h0PuupnNo2Oaj0Y248MARyAslI.jpg"
+                          : cars.img
+                      }
+                      alt={cars.name}
+                    />
                   </div>
                   <h2>{cars.name}</h2>
                   <div className={styles.informations}>
@@ -67,7 +76,7 @@ export const BrandItem = () => {
               ))}
             </div>
           )}
-          {brand && (
+          {brand && car.length > 0 && (
             <div className={styles.more}>
               <ButtonComponent
                 text="Todos os carros"

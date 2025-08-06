@@ -6,7 +6,6 @@ export const ShowFormProvider = ({ children }) => {
   const [showForm, setShowForm] = useState(false);
   function toogleForm() {
     setShowForm((prev) => !prev);
-    console.log(showForm);
   }
   return (
     <showFormContext.Provider value={{ showForm, setShowForm, toogleForm }}>

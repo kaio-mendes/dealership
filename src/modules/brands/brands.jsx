@@ -9,7 +9,7 @@ import { useNavigate } from "react-router";
 export const Brands = () => {
   const navigate = useNavigate();
   function routesBrands(alt) {
-    navigate(`/marca/${alt}`);
+    navigate(`/estoque/${alt}`);
   }
   return (
     <div className={styles.center}>

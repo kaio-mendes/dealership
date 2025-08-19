@@ -4,10 +4,10 @@ export const PageNotFound = () => {
   return (
     <div className={styles.pageNotFound}>
       <main className={styles.content}>
-        <h1>Página não encontrada</h1>
+        <h1>Página Em construção</h1>
         <img src={imageNotFound} />
         <p>
-          A página que você está tentando acessar não existe ou foi removida.
+          A página que você está tentando acessar não foi terminada ou não existe.
         </p>
         <a href="/" className={styles.backButton}>
           Voltar para a Home

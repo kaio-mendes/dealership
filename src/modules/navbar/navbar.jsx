@@ -30,7 +30,6 @@ export const Navbar = () => {
         <div className={styles.links}>
           <Link to="/empresa">Empresa</Link>
           <Link to="/estoque">Estoque</Link>
-          <Link to="/localizacao">Localização</Link>
           <Link to="/financiamento">Financiamento</Link>
           <Link to="/contato">Contato</Link>
         </div>

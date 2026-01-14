@@ -1,3 +1,13 @@
 .container {
   height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.dialog {
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
 }

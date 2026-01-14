@@ -1,0 +1,110 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form textarea {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form option {
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submitBtn {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background-color: #16a34a;
+}
+
+.options {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.options label {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+  align-items: center;
+  gap: 10px;
+}
+
+.options input[type="checkbox"] {
+  margin-top: 0.5rem;
+  width: 18px;
+  height: 18px;
+  accent-color: #1976d2;
+}
+
+.form select {
+  margin-top: 0.5rem;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  min-width: 120px;
+  outline-color: #1976d2;
+}

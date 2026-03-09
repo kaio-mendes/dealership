@@ -10,7 +10,7 @@ export const HomePage = () => {
 
   return (
     <main>
-      <div style={{ maxWidth: 1800, margin: "0 auto", padding: "0 1rem" }}>
+      <div style={{ maxWidth: 1800, margin: "0 auto" }}>
         <Banner />
         <CategoryLogos />
         <NewCars />

@@ -5,10 +5,17 @@
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 .mySwiper {
   width: 50%;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiperSlide img {

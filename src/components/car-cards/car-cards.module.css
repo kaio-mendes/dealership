@@ -3,121 +3,138 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .carCard {
-  width: 25%;
-  max-height: 40rem;
-  border: #8f8f8f52 1px solid;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  width: 20rem;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   position: relative;
+
+  border: 1px solid #ececec;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+
+  transition: all 0.25s ease;
 }
 
 .carCard:hover {
-  transform: scale(1.003);
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 35px rgba(0, 0, 0, 0.12),
+    0 8px 14px rgba(0, 0, 0, 0.06);
   cursor: pointer;
 }
 
 .carCard img {
   width: 100%;
-  height: 50%;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
 
+.carCard h1 {
+  font-size: 1.25rem;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
 .description {
-  color: #a4a5a5;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: #777;
+  font-size: 14px;
+  margin: 6px 0 12px 0;
 }
 
 .centerInformations {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  gap: 10px;
-}
-
-.centerInformations span {
-  color: #000000;
-  font-size: 1.1rem;
-  font-weight: 800;
+  margin: 10px 0;
+  padding: 8px 0;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .centerInformations p {
-  padding: 0 10px;
-  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #474747;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 13px;
+  color: #666;
+  flex: 1;
 }
 
-.centerInformations p:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 10%;
-  height: 80%;
-  width: 2px;
-  background-color: #ccc;
+.centerInformations span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 3px;
+}
+
+.centerInformations p:not(:last-child) {
+  border-right: 1px solid #eee;
 }
 
 .otherInformations {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
+  color: #555;
+}
+
+.otherInformations p {
+  margin-bottom: 4px;
 }
 
 .otherInformations span {
-  font-weight: bold;
+  font-weight: 600;
+  color: #222;
 }
 
 .center {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
 }
+
 .price {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  text-align: right;
+}
+
+.price h1 {
+  font-size: 1.4rem;
+  color: #f9523e;
+
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .containerCards {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 }
 
 @media (max-width: 768px) {
   .containerCards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .carCard {
-    width: 100%;
-    height: auto;
+    grid-template-columns: 1fr;
   }
 
   .carCard img {
-    height: 150px;
+    height: 160px;
   }
 
   .price h1 {
-    font-size: 1.1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .price h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }

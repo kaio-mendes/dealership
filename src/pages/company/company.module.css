@@ -1,3 +1,81 @@
 .container {
-  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.heroText h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroText p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about {
+  margin-bottom: 3rem;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.differentials {
+  margin-bottom: 3rem;
+}
+
+.differentials h2 {
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.cardsitems {
+  border: 1px solid #ececec;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.mapSection h2 {
+  margin-bottom: 1rem;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
 }
